@@ -1,8 +1,13 @@
 import React from 'react';
+import Location from './Location';
+import WeatherData from './WeatherData';
 
 //Create  a constant
 const WeatherLocation = () => (
-  <div>Weather Location</div>
+  <div>
+      <Location/>
+      <WeatherData/>
+  </div>
 );
 
 
