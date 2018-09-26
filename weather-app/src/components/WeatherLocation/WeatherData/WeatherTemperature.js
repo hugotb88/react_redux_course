@@ -1,6 +1,7 @@
 import React from 'react';
 import WeatherIcons from 'react-weathericons';
 import PropTypes from 'prop-types';
+import './styles.css';
 
 //values
 import {
@@ -10,7 +11,7 @@ import {
     RAIN,
     SNOW,
     WINDY,
-} from './../constants/Weathers';
+} from '../../../constants/Weathers';
 
 //Constant where we determinate the state and catalogue of icons
 const icons = {
@@ -32,7 +33,7 @@ const getWeatherIcon = weatherState => {
 };
 
 const WeatherTemperature = ({temperature, weatherState}) =>(
-    <div>
+    <div className='weatherTemperatureCont'>
         {
             getWeatherIcon(weatherState)
         }
@@ -41,7 +42,7 @@ const WeatherTemperature = ({temperature, weatherState}) =>(
 );
 
 
-//Defininf PropTypes to validate their type
+//Defining PropTypes to validate their type
 WeatherTemperature.propTypes = {
     temperature: PropTypes.number.isRequired,
     weatherState: PropTypes.string.isRequired,

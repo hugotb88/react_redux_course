@@ -1,0 +1,11 @@
+.weatherDataCont {
+    background: red;
+}
+
+.weatherExtraInfoCont{
+    background: green;
+}
+
+.weatherTemperatureCont{
+    background: blue;
+}
